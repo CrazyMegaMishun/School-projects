@@ -1,0 +1,53 @@
+{
+  "name": "js-personal-projects",
+  "version": "0.0.1",
+  "description": "Lectrum JS + ES6 course personal projects",
+  "author": {
+    "name": "Andrey Prisniak",
+    "email": "aprisniak@lectrum.io"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
+    "start": "webpack serve --mode development --env development --config webpack/webpack.config.dev.js",
+    "start:prod": "npm run build && serve build/"
+  },
+  "keywords": [
+    "webpack",
+    "frontend",
+    "es6",
+    "javascript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.16.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.3.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.4.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.2.7",
+    "eslint": "^7.32.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.2",
+    "mini-css-extract-plugin": "^1.6.2",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^10.4.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^3.11.3",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.19.1",
+    "datetime": "^0.0.3",
+    "moment": "^2.29.4",
+    "sass": "^1.57.1",
+    "serve": "^13.0.4"
+  }
+}
